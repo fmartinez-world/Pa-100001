@@ -13,7 +13,7 @@ MS_CLIENT_ID = "517c99df-427c-467b-9bf7-c4c8ca0b8399"
 # Recibe los avisos de cambios de contraseña y los códigos de recuperación
 CORREO_GENERAL = "christian.lino@planetaazulrd.com"
 # Páginas que pueden usar la API, separadas por coma (ej. "https://usuario.github.io"). "*" = cualquiera.
-ORIGENES_PERMITIDOS = "*"
+ORIGENES_PERMITIDOS = "https://fmartinez-world.github.io/contacto-cliente/"
 
 # Secretos (NO van aquí; se cargan desde los secretos de GitHub al publicar):
 #   MS_CLIENT_SECRET     valor del secreto de la app de Microsoft
