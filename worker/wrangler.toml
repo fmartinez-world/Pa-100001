@@ -8,10 +8,10 @@ workers_dev = true
 
 [vars]
 # Datos de la app registrada en Microsoft Entra ID (no son secretos)
-MS_TENANT_ID = ""
-MS_CLIENT_ID = ""
+MS_TENANT_ID = "8dbe3e04-118c-4cd5-ae67-0c0c21606098"
+MS_CLIENT_ID = "517c99df-427c-467b-9bf7-c4c8ca0b8399"
 # Recibe los avisos de cambios de contraseña y los códigos de recuperación
-CORREO_GENERAL = "distribucion.planetaazul@gmail.com"
+CORREO_GENERAL = "christian.lino@planetaazulrd.com"
 # Páginas que pueden usar la API, separadas por coma (ej. "https://usuario.github.io"). "*" = cualquiera.
 ORIGENES_PERMITIDOS = "*"
 
