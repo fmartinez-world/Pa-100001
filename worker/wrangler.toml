@@ -1,0 +1,31 @@
+# Contacto-Cliente — intermediario en Cloudflare Workers
+# Se publica solo con GitHub Actions (.github/workflows/worker.yml). Ver docs/instalacion-cloudflare.md
+
+name = "contacto-cliente"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+[vars]
+# Datos de la app registrada en Microsoft Entra ID (no son secretos)
+MS_TENANT_ID = ""
+MS_CLIENT_ID = ""
+# Recibe los avisos de cambios de contraseña y los códigos de recuperación
+CORREO_GENERAL = "distribucion.planetaazul@gmail.com"
+# Páginas que pueden usar la API, separadas por coma (ej. "https://usuario.github.io"). "*" = cualquiera.
+ORIGENES_PERMITIDOS = "*"
+
+# Secretos (NO van aquí; se cargan desde los secretos de GitHub al publicar):
+#   MS_CLIENT_SECRET     valor del secreto de la app de Microsoft
+#   CLAVE_CONFIGURACION  clave para entrar a /configurar (mínimo 12 caracteres)
+
+[[durable_objects.bindings]]
+name = "CC"
+class_name = "ContactoCliente"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["ContactoCliente"]
+
+[observability]
+enabled = true
