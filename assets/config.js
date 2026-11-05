@@ -5,7 +5,7 @@
  *   https://contacto-cliente.TU-SUBDOMINIO.workers.dev/
  */
 window.APP_CONFIG = {
-  apiUrl: '',
+  apiUrl: 'https://contacto-cliente.distribucion-pa.workers.dev/',
   nombreSistema: 'Contacto-Cliente',
   logo: 'CC'
 };
